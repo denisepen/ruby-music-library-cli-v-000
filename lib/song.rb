@@ -61,7 +61,6 @@ def self.destroy_all
   @@all.clear
 end
 
-<<<<<<< HEAD
 def self.new_from_filename(name)
   artist, song, genre_name = name.split(" - ")
   fixed_name = genre_name.gsub(".mp3", "")
