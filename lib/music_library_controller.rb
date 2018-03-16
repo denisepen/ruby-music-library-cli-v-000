@@ -29,7 +29,7 @@ def list_songs
 end
 
 def list_artists
-  arr = Artist.all.name.sort_by(&:name)
+  arr = Artist.all.sort_by(&:name)
    binding.pry
   arr.each.with_index(1) do |art, idx|
         binding.pry
