@@ -23,7 +23,7 @@ def call
   when "list songs"
     list_songs
   when "list artists"
-    list_artists
+    list_song
   when "list genres"
     genres
   when "list artist"
