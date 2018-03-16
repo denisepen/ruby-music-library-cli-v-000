@@ -31,7 +31,7 @@ def call
   when "list genre"
     list_songs_by_genre
   when "play_song"
-    play_song 
+    play_song if song
   end
 end
 end
@@ -80,7 +80,7 @@ def list_songs_by_artist
       end
     end
   end
-  
+
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
