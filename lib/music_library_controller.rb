@@ -59,7 +59,7 @@ def list_songs_by_artist
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     input = gets.strip
-  
+
     if genre = Genre.find_by_name(input)
       genre.songs.sort_by(&:name).each.with_index(1) do |song, idx|
         puts "#{idx}. #{song.artist.name} - #{song.name}"
@@ -67,12 +67,12 @@ def list_songs_by_artist
     end
   end
   #
-  # def play_song(input)
-  #   puts "Which song number would you like to play?"
-  #   input = gets.strip.to_i
-  #   if (1..Song.all.length).include?(input)
-  #   song = Song.all.sort_by(&:name)[input -1]
-  # end
-  #   puts "Playing #{song.name} by #{song.artist.name}" if song
-  # end
+  def play_song(input)
+    puts "Which song number would you like to play?"
+    input = gets.strip.to_i
+    if (1..Song.all.length).include?(input)
+    song = Song.all.sort_by(&:name)[input -1]
+  end
+    puts "Playing #{song.name} by #{song.artist.name}" if song
+  end
 end
