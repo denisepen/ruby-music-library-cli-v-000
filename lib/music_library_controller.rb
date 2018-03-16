@@ -30,9 +30,9 @@ end
 
 def list_artists
   arr = Artist.all.sort_by(&:name)
-  binding.pry
+
   arr.each.with_index(1) do |art, idx|
-    
+
     puts "#{idx}. #{art.name}"
       end
 end
