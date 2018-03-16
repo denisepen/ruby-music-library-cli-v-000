@@ -33,3 +33,4 @@ def list_artists
     puts "#{idx}. #{art.name}"
   end
 end
+end
