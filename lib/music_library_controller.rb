@@ -36,4 +36,13 @@ def list_artists
     puts "#{idx}. #{art.name}"
       end
 end
+
+def list_artists
+  arr = Genre.all.uniq.sort_by(&:name)
+
+  arr.each.with_index(1) do |gen, idx|
+
+    puts "#{idx}. #{gen.name}"
+      end
+end
 end
