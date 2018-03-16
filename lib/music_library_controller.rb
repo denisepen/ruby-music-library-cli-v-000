@@ -34,7 +34,7 @@ def list_artists
   arr.each.with_index(1) do |art, idx|
         binding.pry
     puts "#{idx}. #{art.name}"
-
+    binding.pry
   end
 end
 end
