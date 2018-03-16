@@ -1,6 +1,5 @@
 class Artist
 
-<<<<<<< HEAD
 extend Concerns::Findable
 
     attr_accessor :name
