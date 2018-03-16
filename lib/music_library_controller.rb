@@ -29,7 +29,7 @@ def list_songs
 end
 
 def list_artists
-  arr = Artist.all.sort_by(&:name)
+  arr = Artist.all.uniq.sort_by(&:name)
 
   arr.each.with_index(1) do |art, idx|
 
