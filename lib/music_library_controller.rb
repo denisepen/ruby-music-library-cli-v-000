@@ -31,7 +31,7 @@ def call
   when "list genre"
     list_songs_by_genre
   when "play_song"
-    play_song(input)
+    play_song(input.to_i)
   end
 end
 end
