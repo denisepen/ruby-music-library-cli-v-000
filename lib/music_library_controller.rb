@@ -37,7 +37,7 @@ def list_artists
       end
 end
 
-def list_artists
+def list_genres
   arr = Genre.all.uniq.sort_by(&:name)
 
   arr.each.with_index(1) do |gen, idx|
