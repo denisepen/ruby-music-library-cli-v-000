@@ -27,9 +27,9 @@ def call
   when "list genres"
     list_genres
   when "list artist"
-    list_artists
+    list_songs_by_artists
   when "list genre"
-    list_genres
+    list_songs_by_genres
   when "play_song"
     play_song
   end
