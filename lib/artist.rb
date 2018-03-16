@@ -2,9 +2,6 @@ class Artist
 
 <<<<<<< HEAD
 extend Concerns::Findable
-=======
-# extend Concerns::Findable
->>>>>>> 616209db23cf137e39298315ff7e81177572ff86
 
     attr_accessor :name
 
