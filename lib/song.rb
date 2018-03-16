@@ -74,7 +74,5 @@ def self.new_from_filename(name)
     new_from_filename(name).save
   end
 
-=======
->>>>>>> 616209db23cf137e39298315ff7e81177572ff86
 
 end
